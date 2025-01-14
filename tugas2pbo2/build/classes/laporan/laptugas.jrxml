@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="null" language="groovy" pageWidth="595" pageHeight="842" columnWidth="555" leftMargin="20" rightMargin="20" topMargin="20" bottomMargin="20" uuid="bfa5bf8d-980e-4c5d-8fea-6a63f03aa567">
+	<property name="ireport.zoom" value="1.0"/>
+	<property name="ireport.x" value="0"/>
+	<property name="ireport.y" value="0"/>
+	<queryString language="SQL">
+		<![CDATA[SELECT*FROM ijin_berita]]>
+	</queryString>
+	<field name="id" class="java.lang.Integer">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="isi_berita" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="sumber" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="tahun" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<background>
+		<band splitType="Stretch"/>
+	</background>
+	<title>
+		<band height="79" splitType="Stretch">
+			<staticText>
+				<reportElement x="171" y="25" width="213" height="31" uuid="3bfdfcc4-4494-47d8-bc0b-a6e674505499"/>
+				<textElement>
+					<font size="14" isBold="true"/>
+				</textElement>
+				<text><![CDATA[LAPORAN DATA IJIN BERITA]]></text>
+			</staticText>
+		</band>
+	</title>
+	<pageHeader>
+		<band height="35" splitType="Stretch"/>
+	</pageHeader>
+	<columnHeader>
+		<band height="31" splitType="Stretch">
+			<staticText>
+				<reportElement x="11" y="2" width="67" height="18" uuid="fbe394ba-ef49-4e3f-9ccb-4b4961e235dc"/>
+				<textElement>
+					<font isBold="true"/>
+				</textElement>
+				<text><![CDATA[ID]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="123" y="2" width="68" height="20" uuid="2c20c9bd-a1e5-4ce2-98fe-56bc7d9e30ad"/>
+				<textElement>
+					<font isBold="true"/>
+				</textElement>
+				<text><![CDATA[ISI_BERITA]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="275" y="2" width="73" height="20" uuid="9f0b45b2-769f-4b56-a267-869054d0086b"/>
+				<textElement>
+					<font isBold="true"/>
+				</textElement>
+				<text><![CDATA[SUMBER]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="440" y="2" width="79" height="20" uuid="8e9cc455-6d5d-4ca4-90c8-17d60c815871"/>
+				<textElement>
+					<font isBold="true"/>
+				</textElement>
+				<text><![CDATA[TAHUN]]></text>
+			</staticText>
+		</band>
+	</columnHeader>
+	<detail>
+		<band height="38" splitType="Stretch">
+			<textField>
+				<reportElement x="11" y="9" width="67" height="20" uuid="30339dac-48e0-4607-b772-4e7004b8238d"/>
+				<textFieldExpression><![CDATA[$F{id}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="123" y="9" width="68" height="20" uuid="768e799b-e798-4a25-bce5-b5bb59e07efc"/>
+				<textFieldExpression><![CDATA[$F{isi_berita}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="275" y="9" width="73" height="20" uuid="67de537e-eee3-42b0-bdc6-17936c7ab342"/>
+				<textFieldExpression><![CDATA[$F{sumber}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="440" y="9" width="79" height="20" uuid="b68af1fe-d7f4-45a0-885d-58f65d90ddc8"/>
+				<textFieldExpression><![CDATA[$F{tahun}]]></textFieldExpression>
+			</textField>
+		</band>
+	</detail>
+	<columnFooter>
+		<band height="45" splitType="Stretch"/>
+	</columnFooter>
+	<pageFooter>
+		<band height="54" splitType="Stretch"/>
+	</pageFooter>
+	<summary>
+		<band height="42" splitType="Stretch"/>
+	</summary>
+</jasperReport>
